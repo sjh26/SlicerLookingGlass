@@ -32,7 +32,7 @@ endif()
 
 #-----------------------------------------------------------------------------
 # SuperBuild setup
-option(${EXTENSION_NAME}_SUPERBUILD "Build ${EXTENSION_NAME} and the projects it depends on." ON)
+option(${EXTENSION_NAME}_SUPERBUILD "Build ${EXTENSION_NAME} and the projects it depends on." OFF)
 mark_as_advanced(${EXTENSION_NAME}_SUPERBUILD)
 if(${EXTENSION_NAME}_SUPERBUILD)
   include("${CMAKE_CURRENT_SOURCE_DIR}/SuperBuild.cmake")
